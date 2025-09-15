@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adhesh Rice Mill Engineer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    section { padding: 20px; }
+    h2 { color: #2c3e50; }
+    .contact { background: #ecf0f1; padding: 20px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+    .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.2s; }
+    .gallery img:hover { transform: scale(1.05); }
+    .caption { text-align: center; font-size: 14px; margin-top: 5px; color: #34495e; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    .lightbox { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.9); }
+    .lightbox-content { margin: 5% auto; display: block; max-width: 80%; }
+    .close { position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adhesh Rice Mill Engineer</h1>
+    <p>तुषार गावंडे</p>
+  </header>
+
+  <section>
+    <h2>आमच्याबद्दल</h2>
+    <p>आम्ही Rice Mill साठी आवश्यक असलेली सर्व प्रकारची वेल्डिंग, इलेक्ट्रिकल आणि मशीन इंस्टॉलेशन कामं करतो. गुणवत्तापूर्ण आणि विश्वासार्ह सेवा देणं हाच आमचा उद्देश आहे.</p>
+  </section>
+
+  <section class="gallery">
+    <h2>गॅलरी</h2>
+    <div>
+      <img src="IMAGE_1.jpg" alt="Rice Mill Machinery" onclick="openLightbox(this)">
+      <div class="caption">Rice Mill Machinery Setup</div>
+    </div>
+    <div>
+      <img src="IMAGE_2.jpg" alt="Interior Machinery" onclick="openLightbox(this)">
+      <div class="caption">Interior Machinery Installation</div>
+    </div>
+    <div>
+      <img src="IMAGE_3.jpg" alt="Fabricated Part" onclick="openLightbox(this)">
+      <div class="caption">Fabricated Metal Part</div>
+    </div>
+    <div>
+      <img src="IMAGE_4.jpg" alt="Large Hopper" onclick="openLightbox(this)">
+      <div class="caption">Large Hopper Installation</div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>संपर्क</h2>
+    <p><strong>फोन:</strong> 9028077351</p>
+    <p><strong>ईमेल:</strong> tushargavande2001@gmail.com</p>
+    <p><strong>पत्ता:</strong> Ghoti Budruk 422402</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Adhesh Rice Mill Engineer | सर्व हक्क राखीव</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script>
+    function openLightbox(img) {
+      document.getElementById('lightbox').style.display = 'block';
+      document.getElementById('lightbox-img').src = img.src;
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
