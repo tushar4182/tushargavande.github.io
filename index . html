@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar MillCare</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #002244;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    .services, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tushar MillCare</h1>
+    <p>Precision Engineering. Trusted Service.<br>तांत्रिक अचूकता, विश्वासार्ह सेवा.</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#submit">Submit Problem</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services / आमच्या सेवा</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Rice Mill Fitting</h3>
+        <p>राईस मिल फिटिंग</p>
+      </div>
+      <div class="card">
+        <h3>Machinery Installation</h3>
+        <p>यंत्रसामग्री बसवणे</p>
+      </div>
+      <div class="card">
+        <h3>Repair & Maintenance</h3>
+        <p>दुरुस्ती व देखभाल</p>
+      </div>
+      <div class="card">
+        <h3>Hopper Fabrication</h3>
+        <p>हॉपर तयार करणे</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us / आमच्याबद्दल</h2>
+    <p>With over 5 years of experience, we deliver reliable and precise rice mill fitting services across Maharashtra.<br>
+    ५ वर्षांहून अधिक अनुभव, आम्ही महाराष्ट्रभर अचूक आणि विश्वासार्ह राईस मिल फिटिंग सेवा देतो.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Work / आमचं काम</h2>
+    <div class="gallery">
+      <img src="images/hopper_fabrication.jpg" alt="Hopper Fabrication" />
+      <img src="images/mill_fitting.jpg" alt="Rice Mill Fitting" />
+      <img src="images/repair_maintenance.jpg" alt="Repair & Maintenance" />
+      <img src="images/installation.jpg" alt="Machinery Installation" />
+    </div>
+
+    <h2 style="margin-top:40px;">Customer Problems / ग्राहकांचे फोटो</h2>
+    <div class="gallery">
+      <img src="images/customer_problem1.jpg" alt="Customer Issue 1" />
+      <img src="images/customer_problem2.jpg" alt="Customer Issue 2" />
+    </div>
+  </section>
+
+  <section id="submit">
+    <h2>Submit Your Problem / तुमची समस्या पाठवा</h2>
+    <form>
+      <input type="text" placeholder="तुमचं नाव / Your Name" required />
+      <input type="tel" placeholder="फोन नंबर / Phone Number" required />
+      <textarea placeholder="समस्येचं वर्णन / Describe the Problem" rows="4" required></textarea>
+      <input type="file" accept="image/*" required />
+      <button type="submit">पाठवा / Submit</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact / संपर्क</h2>
+    <p><strong>Phone:</strong> 9028077351<br>
+       <strong>Email:</strong> tushargavande2001@gmail.com<br>
+       <strong>Location:</strong> Igatpuri, Maharashtra</p>
+  </section>
+
+  <footer>
+    © 2025 Tushar MillCare
+  </footer>
+
+</body>
+</html>
