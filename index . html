@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar MillCare – ADHESH</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff6600;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .section {
+      padding: 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .service-box {
+      background-color: #2e2e2e;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 30px;
+    }
+    a.whatsapp {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ADHESH – Tushar Gavande</h1>
+    <p>Rice Mill Engineer | Nashik, Maharashtra</p>
+  </header>
+
+  <div class="section">
+    <h2>सेवा / Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>🔧 रिपेअरिंग / Repairing</h3>
+        <p>जुनी मिल अडचणीत आहे? आम्ही अचूक रिपेअरिंग करतो.</p>
+        <p>Facing issues with your old mill? We repair with precision.</p>
+      </div>
+      <div class="service-box">
+        <h3>🏗️ फिटिंग / New Mill Fitting</h3>
+        <p>नवीन मिल बसवायची आहे? योग्य फिटिंग मिळवा.</p>
+        <p>Setting up a new mill? Get perfect installation.</p>
+      </div>
+      <div class="service-box">
+        <h3>📅 AMC</h3>
+        <p>वार्षिक देखभाल करार – वेळेवर सर्व्हिस.</p>
+        <p>Annual Maintenance Contract – timely service.</p>
+      </div>
+      <div class="service-box">
+        <h3>⚙️ स्पेअर पार्ट्स / Spare Parts</h3>
+        <p>हाय क्वालिटी पार्ट्स – त्वरित उपलब्धता.</p>
+        <p>High-quality parts – quick availability.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>📞 संपर्क / Contact</h2>
+    <p>9028077351</p>
+    <a class="whatsapp" href="https://wa.me/9028077351" target="_blank">WhatsApp वर संपर्क करा</a>
+  </div>
+
+</body>
+</html>
