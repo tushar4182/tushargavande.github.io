@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>तुषार गावंडे - राईस मिल एक्सपर्ट</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --rice-gold: #d4af37;
+            --rice-brown: #8b4513;
+            --mill-blue: #2c5aa0;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .rice-pattern-bg {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="%23d4af37" opacity="0.1" d="M30,50 Q50,30 70,50 Q50,70 30,50 Z M20,20 Q40,10 60,20 Q40,30 20,20 Z M80,80 Q60,90 40,80 Q60,70 80,80 Z"/></svg>');
+            background-size: 200px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(139, 69, 19, 0.85), rgba(44, 90, 160, 0.85)), 
+                        url('https://images.unsplash.com/photo-1581094794329-cd6d5d3f5a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+        }
+        
+        .rice-grain {
+            color: var(--rice-gold);
+            font-size: 2rem;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(135deg, var(--rice-gold), var(--mill-blue)) border-box;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(139, 69, 19, 0.2);
+        }
+        
+        .machine-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .mill-gradient-bg {
+            background: linear-gradient(135deg, var(--rice-brown) 0%, var(--mill-blue) 100%);
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, var(--rice-brown) 0%, var(--mill-blue) 100%);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(139, 69, 19, 0.3);
+        }
+        
+        .gallery-img {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid var(--rice-gold);
+        }
+        
+        .floating-rice {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .owner-name {
+            font-weight: bold;
+            color: #8b4513;
+        }
+    </style>
+</head>
+<body class="rice-pattern-bg">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark mill-gradient-bg py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="fas fa-seedling me-2"></i>
+                तुषार गावंडे - मिल केअर
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="floating-rice">
+                        <i class="fas fa-seedling fa-4x mb-4" style="color: #d4af37;"></i>
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4 text-warning">🌾 तुषार गावंडे 🌾</h1>
+                    <p class="lead fs-3 mb-4">राईस मिल स्पेशलिस्ट - इगतपुरी, नाशिक</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mt-5">
+                        <a href="tel:9028077351" class="btn btn-warning btn-lg px-5 py-3 fw-bold fs-5">
+                            <i class="fas fa-phone me-2"></i>कॉल करा - 9028077351
+                        </a>
+                        <a href="https://wa.me/919028077351" class="btn btn-success btn-lg px-5 py-3 fw-bold fs-5">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3 owner-name">🌾 आमच्या सेवा 🌾</h2>
+                <p class="lead fs-4" style="color: #2c5aa0;">तांदूळ मिल च्या संपूर्ण समाधानासाठी</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="machine-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-cd6d5d3f5a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                        <div class="card-body p-4">
+                            <i class="fas fa-wrench rice-grain mb-3"></i>
+                            <h5 class="fw-bold owner-name">मिल दुरुस्ती</h5>
+                            <p class="text-muted">सर्व प्रकारच्या तांदूळ मिल मशीन दुरुस्ती</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="machine-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-cd6d5d3f5a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                        <div class="card-body p-4">
+                            <i class="fas fa-cogs rice-grain mb-3"></i>
+                            <h5 class="fw-bold owner-name">नवीन मशीनरी</h5>
+                            <p class="text-muted">आधुनिक तांदूळ मिल मशीन सेटअप</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="machine-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-cd6d5d3f5a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                        <div class="card-body p-4">
+                            <i class="fas fa-industry rice-grain mb-3"></i>
+                            <h5 class="fw-bold owner-name">हॉप्पर निर्मिती</h5>
+                            <p class="text-muted">तांदूळ मिल साठी कस्टम हॉप्पर</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card service-card h-100 text-center">
+                        <div class="machine-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-cd6d5d3f5a54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                        <div class="card-body p-4">
+                            <i class="fas fa-tools rice-grain mb-3"></i>
+                            <h5 class="fw-bold owner-name">नियमित देखभाल</h5>
+                            <p class="text-muted">मिल मशीन मेंटेनन्स सेवा</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-card p-5 text-center">
+                        <h3 class="fw-bold mb-4 fs-2">🌾 तातडीची मिल सेवा हवी? 🌾</h3>
+                        <p class="fs-4 mb-4">तुषार गावंडे यांना आत्ताच संपर्क साधा</p>
+                        
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <a href="tel:9028077351" class="btn btn-warning btn-lg w-100 fw-bold py-3 fs-5">
+                                    <i class="fas fa-phone me-2"></i>कॉल करा
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="https://wa.me/919028077351" class="btn btn-success btn-lg w-100 fw-bold py-3 fs-5">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-3 border-top border-warning">
+                            <p class="mb-1 fs-5"><i class="fas fa-user me-2"></i>तुषार गावंडे - मिल स्पेशलिस्ट</p>
+                            <p class="mb-0 fs-5"><i class="fas fa-map-marker-alt me-2"></i>इगतपुरी, नाशिक - 422402</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mill-gradient-bg text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0 fs-5">🌾 <strong>तुषार गावंडे - मिल केअर</strong> 🌾</p>
+            <p class="mb-0 mt-2">इगतपुरी, नाशिक | 9028077351</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
